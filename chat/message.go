@@ -4,7 +4,7 @@
 package chat
 
 import (
-	"github.com/multiplay/go/slack"
+	"github.com/multiplay/go-slack"
 )
 
 const (

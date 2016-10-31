@@ -5,4 +5,6 @@ go:
 
 install:
   - go get golang.org/x/net/context
-  - go get golang.org/x/time
+  - go get golang.org/x/time/rate
+  - go get github.com/Sirupsen/logrus
+  - go get github.com/stretchr/testify/assert

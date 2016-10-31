@@ -9,7 +9,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/multiplay/go/slack"
+	"github.com/multiplay/go-slack"
 )
 
 // Client is a slack webhook client for posting messages using a webhook URL.

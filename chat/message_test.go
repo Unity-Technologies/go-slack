@@ -3,7 +3,7 @@ package chat
 import (
 	"testing"
 
-	"github.com/multiplay/go/slack/test"
+	"github.com/multiplay/go-slack/test"
 
 	"github.com/stretchr/testify/assert"
 )

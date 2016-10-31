@@ -7,7 +7,7 @@ package test
 import (
 	"net/url"
 
-	"github.com/multiplay/go/slack/webhook"
+	"github.com/multiplay/go-slack/webhook"
 )
 
 // New returns a new slack.Client that can be used for testing.
