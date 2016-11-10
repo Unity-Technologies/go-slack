@@ -1,4 +1,4 @@
-# Slack [![Go Report Card](https://goreportcard.com/badge/github.com/multiplay/go-slack)](https://goreportcard.com/report/github.com/multiplay/go-slack) [![License](https://img.shields.io/badge/license-BSD-blue.svg)](https://github.com/multiplay/go-slack/blob/master/LICENSE) [![GoDoc](https://godoc.org/github.com/multiplay/go-slack?status.svg)](https://godoc.org/github.com/multiplay/go-slack?status.svg) [![Build Status](https://travis-ci.org/multiplay/go-slack.svg?branch=master)](https://travis-ci.org/multiplay/go-slack)
+# Slack [![Go Report Card](https://goreportcard.com/badge/github.com/multiplay/go-slack)](https://goreportcard.com/report/github.com/multiplay/go-slack) [![License](https://img.shields.io/badge/license-BSD-blue.svg)](https://github.com/multiplay/go-slack/blob/master/LICENSE) [![GoDoc](https://godoc.org/github.com/multiplay/go-slack?status.svg)](https://godoc.org/github.com/multiplay/go-slack) [![Build Status](https://travis-ci.org/multiplay/go-slack.svg?branch=master)](https://travis-ci.org/multiplay/go-slack)
 
 go-slack is a [Go](http://golang.org/) library for the [Slack API](https://api.slack.com/).
 
