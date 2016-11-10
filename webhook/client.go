@@ -6,8 +6,10 @@ package webhook
 import (
 	"bytes"
 	"encoding/json"
+	"io"
 	"io/ioutil"
 	"net/http"
+	"strings"
 
 	"github.com/multiplay/go-slack"
 )
@@ -43,7 +45,17 @@ func (c *Client) Send(url string, msg, resp interface{}) error {
 		return slack.NewError(r.StatusCode, string(b))
 	}
 
-	dec := json.NewDecoder(r.Body)
+	var body io.Reader
+	if strings.HasPrefix(c.URL, "https://hooks.slack.com") {
+		// Work around webhooks not returning JSON as originally documented
+		// by treating all StatusOK as success.
+		body = bytes.NewReader([]byte(`{"ok":true}`))
+	} else {
+		// This is required for compatibility with API test endpoint.
+		body = r.Body
+	}
+
+	dec := json.NewDecoder(body)
 	if err := dec.Decode(resp); err != nil {
 		return slack.NewError(r.StatusCode, err.Error())
 	}
