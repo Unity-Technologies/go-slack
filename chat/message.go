@@ -23,6 +23,9 @@ type Message struct {
 	// Text of the message to send.
 	Text string `json:"text,omitempty"`
 
+	// Markdown enables Markdown support.
+	Markdown bool `json:"mrkdwn,omitempty"`
+
 	// Parse changes how messages are treated.
 	Parse string `json:"parse,omitempty"`
 

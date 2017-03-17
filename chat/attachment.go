@@ -16,7 +16,7 @@ type Attachment struct {
 	AuthorName string `json:"author_name,omitempty"`
 
 	// AuthorLink is a valid URL that will hyperlink the author_name text mentioned above.
-	AuthorLink string `json:"author_name,omitempty"`
+	AuthorLink string `json:"author_link,omitempty"`
 
 	// AuthorIcon is a valid URL that displays a small 16x16px image to the left of the author_name text.
 	AuthorIcon string `json:"author_icon,omitempty"`
@@ -32,6 +32,10 @@ type Attachment struct {
 
 	// Fields contains optional fields to be displayed in the in a table inside the attachment.
 	Fields []*Field `json:"fields,omitempty"`
+
+	// MarkdownIn enables Markdown support. Valid values are ["pretext", "text", "fields"].
+	// Setting "fields" will enable markup formatting for the value of each field.
+	MarkdownIn []string `json:"mrkdwn_in,omitempty"`
 
 	// ImageURL is the URL to an image file that will be displayed inside the attachment.
 	ImageURL string `json:"image_url"`
