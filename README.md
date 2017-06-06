@@ -7,7 +7,7 @@ Features
 * [Slack Webhook](https://api.slack.com/incoming-webhooks) Support.
 * [Slack chat.postMessage](https://api.slack.com/methods/chat.postMessage) Support.
 * Client Interface - Use alternative implementations - currently webhook is the only client.
-* [Logurs Hook](https://github.com/Sirupsen/logrus) Support - Automatically send messages to [Slack](https://slack.com) when using a [Logrus](https://github.com/Sirupsen/logrus) logger.
+* [Logurs Hook](https://github.com/sirupsen/logrus) Support - Automatically send messages to [Slack](https://slack.com) when using a [Logrus](https://github.com/sirupsen/logrus) logger.
 
 Installation
 ------------
@@ -34,13 +34,13 @@ func main() {
 }
 ```
 
-If your using [logrus](https://github.com/Sirupsen/logrus) you can use the webhook to post to slack based on your logging e.g.
+If your using [logrus](https://github.com/sirupsen/logrus) you can use the webhook to post to slack based on your logging e.g.
 ```go
 package main
 
 import (
 	"github.com/multiplay/go-slack/lrhook"
-	"github.com/Sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 )
 
 func main() {
