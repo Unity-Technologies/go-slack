@@ -3,7 +3,7 @@
 // It can post messages to slack based on the notification level of the
 // logrus entry including the ability to rate limit messages.
 //
-// See: https://godoc.org/github.com/Sirupsen/logrus#Hook
+// See: https://godoc.org/github.com/sirupsen/logrus#Hook
 package lrhook
 
 import (
@@ -13,7 +13,7 @@ import (
 	"github.com/multiplay/go-slack/chat"
 	"github.com/multiplay/go-slack/webhook"
 
-	"github.com/Sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 	"golang.org/x/time/rate"
 )
 
