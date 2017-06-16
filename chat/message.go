@@ -56,6 +56,13 @@ type Message struct {
 	// Overrides IconURL.
 	// Must be used in conjunction with AsUser set to false, otherwise ignored.
 	IconEmoji string `json:"icon_emoji,omitempty"`
+
+	// ThreadTS is the timestamp (ts) of the parent message to reply to a thread.
+	ThreadTS string `json:"thread_ts,omitempty"`
+
+	// ReplyBroadcast used in conjunction with thread_ts and indicates whether reply
+	// should be made visible to everyone in the channel or conversation.
+	ReplyBroadcast bool `json:"reply_broadcast,omitempty"`
 }
 
 // NewAttachment creates a new empty attachment adds it to the message and returns it.
