@@ -7,7 +7,7 @@ Features
 * [Slack Webhook](https://api.slack.com/incoming-webhooks) Support.
 * [Slack chat.postMessage](https://api.slack.com/methods/chat.postMessage) Support.
 * Client Interface - Use alternative implementations - currently webhook is the only client.
-* [Logurs Hook](https://github.com/sirupsen/logrus) Support - Automatically send messages to [Slack](https://slack.com) when using a [Logrus](https://github.com/sirupsen/logrus) logger.
+* [Logrus Hook](https://github.com/sirupsen/logrus) Support - Automatically send messages to [Slack](https://slack.com) when using a [Logrus](https://github.com/sirupsen/logrus) logger.
 
 Installation
 ------------
