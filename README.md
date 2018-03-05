@@ -40,6 +40,7 @@ package main
 
 import (
 	"github.com/multiplay/go-slack/lrhook"
+	"github.com/multiplay/go-slack/chat"
 	"github.com/sirupsen/logrus"
 )
 
@@ -55,7 +56,7 @@ func main() {
 	logrus.SetFormatter(&logrus.JSONFormatter{})
 	logrus.SetLevel(logrus.InfoLevel)
 	logrus.AddHook(h)
-	logrus.Error("my error)
+	logrus.Error("my error")
 }
 ```
 
