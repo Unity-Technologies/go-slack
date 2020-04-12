@@ -20,6 +20,7 @@ import (
 var (
 	// DefaultLevelColors is the default level colors used if none are present in the configuration.
 	DefaultLevelColors = map[string]string{
+		"trace":   "#797979",
 		"debug":   "#9B30FF",
 		"info":    "good",
 		"warning": "danger",
