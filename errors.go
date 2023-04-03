@@ -13,11 +13,12 @@ type Error struct {
 	Message string
 }
 
-// NewError returns a new slack error with statuscode and msg.
-func NewError(statuscode int, msg string) *Error {
-	return &Error{StatusCode: statuscode, Message: msg}
+// NewError returns a new slack error with status code and message.
+func NewError(statusCode int, message string) *Error {
+	return &Error{StatusCode: statusCode, Message: message}
 }
 
+// Error returns a string representation of the error.
 func (e *Error) Error() string {
-	return fmt.Sprintf("slack: request failed statuscode: %v, message: %v", e.StatusCode, e.Message)
+	return fmt.Sprintf("Slack API error: status code %d, message %q", e.StatusCode, e.Message)
 }
