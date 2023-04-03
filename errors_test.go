@@ -8,10 +8,9 @@ import (
 )
 
 func TestNewError(t *testing.T) {
-	errStr := "my error"
-	code := http.StatusNotFound
-	err := NewError(code, errStr)
-	assert.Error(t, err)
-	assert.Equal(t, code, err.StatusCode)
-	assert.Contains(t, err.Error(), "failed")
+	const errMsg = "my error"
+	const statusCode = http.StatusNotFound
+	err := NewError(statusCode, errMsg)
+	assert.EqualError(t, err, fmt.Sprintf("Slack API error: status code %d, message %q", statusCode, errMsg))
+	assert.Equal(t, statusCode, err.StatusCode)
 }
